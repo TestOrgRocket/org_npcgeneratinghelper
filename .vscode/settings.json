@@ -56,6 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "NPC Generating Helper.sln",
+    "dotnet.defaultSolution": "org_npcgeneratinghelper.sln",
     "git.ignoreLimitWarning": true
 }
