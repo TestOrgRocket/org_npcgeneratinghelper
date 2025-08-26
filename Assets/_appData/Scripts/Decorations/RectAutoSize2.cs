@@ -1,0 +1,21 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class RectAutoSize2 : MonoBehaviour
+{
+    public float cellSize = 300f;
+    void OnEnable()
+    {
+        ChangeSize();
+    }
+    public void ChangeSize()
+    {
+        int childCount = transform.childCount;
+        RectTransform rt = GetComponent<RectTransform>();
+        float newYSize = (childCount / 3 + 1) * cellSize + 50;
+        rt.sizeDelta = new Vector2(rt.sizeDelta.x, newYSize);
+        rt.anchoredPosition = new Vector2(rt.anchoredPosition.x, -newYSize / 2 - 50);
+        transform.localPosition = transform.localPosition - Vector3.up * 50f;
+    }
+}
