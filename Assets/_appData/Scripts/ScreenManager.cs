@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using Unity.Advertisement.IosSupport;
 using UnityEngine;
 
 public class ScreenManager : MonoBehaviour
@@ -11,6 +12,19 @@ public class ScreenManager : MonoBehaviour
     public GameObject AllNPCsScreen;
     public GameObject privacyPolicyText;
 
+    void OnEnable()
+    {
+        // OpenMenu();
+        StartCoroutine(delayActions());
+    }
+    IEnumerator delayActions()
+    {
+        yield return new WaitForSeconds(0.5f);
+        if (ATTrackingStatusBinding.GetAuthorizationTrackingStatus() == ATTrackingStatusBinding.AuthorizationTrackingStatus.NOT_DETERMINED)
+        {
+            ATTrackingStatusBinding.RequestAuthorizationTracking();
+        }
+    }
     public void OpenPrivacyPolicy()
     {
         closeScreens();
