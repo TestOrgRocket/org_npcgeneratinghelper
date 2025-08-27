@@ -1,0 +1,31 @@
+{
+  "project_info": {
+    "project_number": "161008752306",
+    "project_id": "npc-generating-helper",
+    "storage_bucket": "npc-generating-helper.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161008752306:ios:1d2466c5d25de340e35bab",
+        "android_client_info": {
+          "package_name": "com.abcdefq.npcgenerator"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR6q0EWo-P-WVPAOvRzbT0tqu6duPBp7s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
