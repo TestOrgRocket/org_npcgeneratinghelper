@@ -98,9 +98,9 @@ public static class AddNotificationExtension
         var root = doc.root;
 
         root.SetString("NSUserTrackingUsageDescription", "Your data will be used to personalize ads.");
-        root.SetString("NSPhotoLibraryUsageDescription", "Allows photo library access.");
-        root.SetString("NSCameraUsageDescription", "Allows camera access.");
-        root.SetString("NSMicrophoneUsageDescription", "Allows microphone access.");
+        // root.SetString("NSPhotoLibraryUsageDescription", "Allows photo library access.");
+        // root.SetString("NSCameraUsageDescription", "Allows camera access.");
+        // root.SetString("NSMicrophoneUsageDescription", "Allows microphone access.");
         root.SetBoolean("ITSAppUsesNonExemptEncryption", false);
 
         var ats = root.CreateDict("NSAppTransportSecurity");

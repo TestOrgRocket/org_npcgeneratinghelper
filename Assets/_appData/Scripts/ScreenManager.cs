@@ -15,7 +15,11 @@ public class ScreenManager : MonoBehaviour
     void OnEnable()
     {
         // OpenMenu();
-        StartCoroutine(delayActions());
+        // StartCoroutine(delayActions());
+        // if (ATTrackingStatusBinding.GetAuthorizationTrackingStatus() == ATTrackingStatusBinding.AuthorizationTrackingStatus.NOT_DETERMINED)
+        // {
+        //     ATTrackingStatusBinding.RequestAuthorizationTracking();
+        // }
     }
     IEnumerator delayActions()
     {
